@@ -4,7 +4,7 @@ export TOOLCHAIN=Linaro_Toolchain
 
 if [ ${TOOLCHAIN} == "Yocto_Toolchain" ]; then
         echo "used Yocto SDK Toolchain"
-source ${ATF_SRC}/../../../SDK/environment-setup-cortexa53-crypto-poky-linux
+source /opt/fsl-imx-wayland/5.10-hardknott/environment-setup-cortexa53-crypto-poky-linux
 unset CFLAGS CPPFLAGS CXXFLAGS LDFLAGS MACHINE	#remove -Wl, -O1
 else
         echo "used Linaro Toolchain"

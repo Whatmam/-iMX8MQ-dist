@@ -4,7 +4,7 @@ export TOOLCHAIN=Linaro_Toolchain
 
 if [ ${TOOLCHAIN} == "Yocto_Toolchain" ]; then
         echo "used Yocto SDK Toolchain"
-source ${UBOOT_SRC}/../../SDK/environment-setup-cortexa53-crypto-poky-linux
+source /opt/fsl-imx-wayland/5.10-hardknott/environment-setup-cortexa53-crypto-poky-linux
 else
         echo "used Linaro Toolchain"
 export ARCH=arm64

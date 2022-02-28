@@ -10,7 +10,7 @@ rm -rf build.imx-mx8mqevk
 if [ ${TOOLCHAIN} == "Yocto_Toolchain" ]; then
         echo "used Yocto SDK Toolchain"
         ### [whatmam] Yocto SDK Toolchain build failed. it's not working.
-source ${OPTEE_SRC}/../../../SDK/environment-setup-cortexa53-crypto-poky-linux
+source /opt/fsl-imx-wayland/5.10-hardknott/environment-setup-cortexa53-crypto-poky-linux
 ARCH=arm CROSS_COMPILE64=${CROSS_COMPILE} CFLAGS="--sysroot=${SDKTARGETSYSROOT}" LDFLAGS= ./scripts/nxp_build.sh imx-mx8mqevk
 #ARCH=arm CROSS_COMPILE64=${CROSS_COMPILE} CFLAGS="--sysroot=${SDKTARGETSYSROOT}" LDFLAGS= ./scripts/nxp_build.sh imx-mx8qmmek
 else
